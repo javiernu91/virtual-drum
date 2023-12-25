@@ -6,7 +6,15 @@
 
 body {
   height: 100vh;
-  background: grey;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(252, 124, 214, 0.226),
+    rgba(0, 0, 255, 0.253)
+  ), url("./images/mountains.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
 }
 
 .container {
@@ -19,18 +27,31 @@ body {
 }
 
 .key {
-  height: 60px;
-  width: 60px;
+  min-height: 60px;
+  min-width: 60px;
   border: none;
-  background-color: rgb(251, 255, 251);
+  background-color: rgba(247, 241, 241, 0.205);
   border-radius:8px;
   display: flex;
-  justify-content: center;
-  align-items: end;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
+  color: rgba(240, 240, 240, 0.9);
+  font-size: 38px;
+  text-shadow: 1px 1px 1px #030000f0;
 }
 
 .key span {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
+  color: rgba(136, 12, 130, 0.932);
+  padding-bottom: 4px;
+  text-shadow: 1px 1px 1px #e5e5e5f0;
+}
+
+.playing {
+  border: solid 1.5px rgba(136, 12, 130, 0.932);
+  background-color: rgba(247, 241, 247, 0.397);
+  box-shadow: 3px 3px 3px 2px rgb(105 8 91 / 20%);
 }
